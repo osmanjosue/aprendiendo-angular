@@ -18,7 +18,11 @@
         
              <span [ngStyle]="{
                  'text-decoration': !bamba.stock ? 'line-through': 'none'}">
-                 {{bamba.nombre}} <strong>{{bamba.precio}}</strong></span>
+
+                 {{bamba.nombre}} - 
+                 <strong [class.altoprecio]="bamba.precio>=600">{{bamba.precio}} $</strong>
+            </span>
+            
             <span *ngIf="bamba.precio <600"
             [style.background]="bamba.precio < 600 ? 'green': 'blue'"
             [style.color]="bamba.precio<600 ? 'white ': 'white'"
