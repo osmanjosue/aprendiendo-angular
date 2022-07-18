@@ -20,7 +20,13 @@
                  'text-decoration': !bamba.stock ? 'line-through': 'none'}">
 
                  {{bamba.nombre}} - 
-                 <strong [class.altoprecio]="bamba.precio>=600">{{bamba.precio}} $</strong>
+                 <strong [class.altoprecio]="bamba.precio>1000"
+                 [ngClass]="{'fondoRojo': (bamba.precio>1000),
+                  'subrayado': (bamba.marca=='nike')
+                }"   
+                 >
+                    
+                {{bamba.precio}} $</strong>
             </span>
             
             <span *ngIf="bamba.precio <600"

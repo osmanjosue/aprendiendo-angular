@@ -21,7 +21,8 @@ export class ZapatillasComponent implements OnInit {
       new Zapatilla('reebos clalalasic', 'adidas', 'rosado trozado', 500, true),
       new Zapatilla('pelemeleleje', 'REEBUS', 'rojo cojo', 1500, false),
       new Zapatilla('run Away', 'Asics', 'verde shrek', 1500, false),
-      new Zapatilla('AlbertoCuloAbierto', 'adidas', 'Negro Niga', 1000, true)
+      new Zapatilla('AlbertoCuloAbierto', 'adidas', 'Negro Niga', 1000, true),
+      new Zapatilla('AlbertoCuloAbierto', 'nike', 'Negro', 1200, true)
 
     ];
   }
