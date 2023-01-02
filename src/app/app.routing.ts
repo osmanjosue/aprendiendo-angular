@@ -10,8 +10,9 @@ import { ZapatillasComponent } from "./zapatillas/zapatillas.component";
 //Array de rutas
 const appRoutes:Routes=[
     {path: '', component:HomeComponent},
+    {path:'home', component:HomeComponent},
     {path:'zapatillas', component:ZapatillasComponent},
-    {path: 'videojuego', component:VideojuegoComponent},
+    {path:'videojuego', component:VideojuegoComponent},
     {path:'cursos', component:CursosComponent},
     {path: '**', component:HomeComponent}
 

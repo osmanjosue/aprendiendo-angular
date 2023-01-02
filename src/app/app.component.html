@@ -3,6 +3,17 @@
     Bienvenido al curso de {{ title }}!
   </h1>
   <p>{{descripcion}}</p>
+
+  <nav>
+    <a [routerLink]="['/home']" [routerLinkActive]="['active']">home</a>
+      &nbsp;
+    <a [routerLink]="['/zapatillas']" [routerLinkActive]="['active']">Zapatillas</a>
+    &nbsp;
+    <a [routerLink]="['/cursos']" [routerLinkActive]="['active']">Cursos</a>
+    &nbsp;
+    <a [routerLink]="['/videojuego']" [routerLinkActive]="['active']">videojuego</a>
+  </nav>
+  <hr>
  <!--  <button (click)="ocultar_videojuego(false)" *ngIf="mostrar_videojuego">ocultar</button>
   <button (click)="ocultar_videojuego(true)" *ngIf="!mostrar_videojuego">mostrar</button>
   <videojuego *ngIf="mostrar_videojuego"></videojuego> 
