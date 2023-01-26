@@ -16,16 +16,15 @@ export class ZapatillasComponent implements OnInit {
   public mi_marca: string;
 
   constructor( private _zapatillaService:ZapatillaService) {
-    this.zapatillas= this._zapatillaService.getZapatillas();
     this.color = 'yellow';
     this.marcas = new Array();
    
   }
 
   ngOnInit(): void {
-   
-   console.log('this.zapatillas');
     
+   this.zapatillas= this._zapatillaService.getZapatillas();   
+   alert(this._zapatillaService.getTexto()); 
     this.getMarcas();
   }
 

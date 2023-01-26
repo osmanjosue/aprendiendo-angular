@@ -17,9 +17,9 @@ export class ZapatillaService{
       ];
     }
 
-  /*   getTexto(){
+    getTexto(){
         return "hola mundo desde un servicio";
-    } */
+    }
 
     getZapatillas(){
         return this.zapatillas;
