@@ -20,8 +20,9 @@ export class ExternoComponent implements OnInit {
   ngOnInit(): void {
       this.cargaUsuario();
     }
-    
+
     cargaUsuario(){
+      this.user =false;
       this._peticionesService.getUser(this.userId).subscribe(
         result=>{
           this.user=result.data;
