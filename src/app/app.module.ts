@@ -13,6 +13,7 @@ import { CursosComponent } from './cursos/cursos.component';
 import { HomeComponent } from './home/home.component';
 import { ExternoComponent } from './externo/externo.component';
 import { PeticionesService } from './services/peticiones.service';
+import { CalculadoraPipe } from './pipes/calculadora.pipe';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PeticionesService } from './services/peticiones.service';
     ZapatillasComponent,
     CursosComponent,
     HomeComponent,
-    ExternoComponent
+    ExternoComponent,
+    CalculadoraPipe
   ],
   imports: [
     BrowserModule,
